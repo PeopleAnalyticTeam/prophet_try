@@ -45,7 +45,7 @@ def input_dataset(
         df = download_toy_dataset(config["datasets"][dataset_name]["url"])
         load_options["dataset"] = dataset_name
         load_options["date_format"] = config["dataprep"]["date_format"]
-        load_options["separator"] = ""
+        load_options["separator"] = ";"
     else:
         file = st.file_uploader(
             "Pilih file yang akan di analisa dan prediksi", type="csv", help=readme["tooltips"]["dataset_upload"]
