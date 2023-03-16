@@ -19,8 +19,8 @@ The report contains the data, the plots and the config used to get them.
 Use it only when you actually want to save experiments, as it might make processings a bit slower.
 """
 upload_choice = """
-* Check to load a toy dataset and see what can be done with this app.
-* Uncheck to upload your own dataset.
+* Centang, jika ingin menggunakan data sampel.
+* Hilangkan tanda centang, jika ingin menggunakan dataset anda.
 """
 custom_config = """
 Follow these steps to provide your own configuration file:
@@ -36,12 +36,13 @@ dataset_upload = """
 Your csv file should have at least a column with dates and a column with numeric values to forecast.
 """
 toy_dataset = """
-Five toy datasets are available:
-* __Retail sales__: Sales from Walmart stores (daily)
-* __House sales__: House sales in London boroughs (monthly)
-* __Energy consumption__: Households energy consumption (daily)
-* __Weather__: Temperature in Madrid (hourly)
-* __Commodity prices__: Corn price in USD per bushel (weekly)
+Terdapat 5 sampel data, yaitu :
+* __Retail sales__: Data harian penjualan Toko Walmart
+* __House sales__: Data bulanan penjualan rumah di London
+* __Energy consumption__: Data harian asumsi penggunaan listrik
+* __Weather__: Data perjam suhu di Madrid
+* __Commodity prices__: Data mingguan harga jagung dalam USD
+
 """
 date_format = """
 For example "%Y-%m-%d" or "%d/%m/%Y %H:%M:%S".
