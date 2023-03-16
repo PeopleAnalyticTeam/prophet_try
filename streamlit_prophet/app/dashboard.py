@@ -67,7 +67,7 @@ st.sidebar.image(load_image("logo.png"), use_column_width=True)
 # display_links(readme["links"]["repo"], readme["links"]["article"])
 
 
-st.sidebar.title(":green[1. Data]")
+st.sidebar.title(" :green[1. Data] ")
 
 # Load data
 with st.sidebar.expander("Dataset", expanded=True):
