@@ -58,16 +58,16 @@ report: List[Dict[str, Any]] = []
 
 # Info
 with st.expander(
-    "Aplikasi Streamlit ini untuk memprediksi sebuah deret waktu", expanded=False #Streamlit app to build a time series forecasting model in a few clicks, expanded=False
+    "Informasi tentang Aplikasi", expanded=False #Streamlit app to build a time series forecasting model in a few clicks, expanded=False
 ):
     st.write(readme["app"]["app_intro"])
     st.write("")
 st.write("")
 st.sidebar.image(load_image("logo.png"), use_column_width=True)
-display_links(readme["links"]["repo"], readme["links"]["article"])
+# display_links(readme["links"]["repo"], readme["links"]["article"])
 
 
-st.sidebar.title("1. Data")
+st.sidebar.title(":green[1. Data]")
 
 # Load data
 with st.sidebar.expander("Dataset", expanded=True):
