@@ -71,7 +71,7 @@ st.sidebar.title("1. Data")
 
 # Load data
 with st.sidebar.expander("Dataset", expanded=True):
-    df, load_options, config, datasets = input_dataset(config, readme, instructions)
+    # df, load_options, config, datasets = input_dataset(config, readme, instructions)
     df, empty_cols = remove_empty_cols(df)
     print_empty_cols(empty_cols)
 
