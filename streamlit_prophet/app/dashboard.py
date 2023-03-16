@@ -45,7 +45,7 @@ from streamlit_prophet.lib.models.prophet import forecast_workflow
 from streamlit_prophet.lib.utils.load import load_config, load_image
 
 # Page config
-st.set_page_config(page_title="Prophet") #, layout="wide")
+st.set_page_config(page_title="Prophet_Try") #, layout="wide")
 
 # Load config
 config, instructions, readme = load_config(
@@ -58,7 +58,7 @@ report: List[Dict[str, Any]] = []
 
 # Info
 with st.expander(
-    "Streamlit app to build a time series forecasting model in a few clicks", expanded=False
+    "Aplikasi Streamlit ini untuk memprediksi sebuah deret waktu", expanded=False #Streamlit app to build a time series forecasting model in a few clicks, expanded=False
 ):
     st.write(readme["app"]["app_intro"])
     st.write("")
