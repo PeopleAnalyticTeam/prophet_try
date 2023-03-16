@@ -48,35 +48,17 @@ def input_dataset(
         load_options["separator"] = ","
     else:
         file = st.file_uploader(
-            "Upload a csv file", type="csv", help=readme["tooltips"]["dataset_upload"]
+            "Pilih file yang akan di analisa dan prediksi", type="csv", help=readme["tooltips"]["dataset_upload"]
         )
         load_options["separator"] = st.selectbox(
-            "What is the separator?", [",", ";", "|"], help=readme["tooltips"]["separator"]
+            "Tentukan separator File CSV", [",", ";", "|"], help=readme["tooltips"]["separator"]
         )
         load_options["date_format"] = st.text_input(
-            "What is the date format?",
+            "Tentukan format kolom periode",
             config["dataprep"]["date_format"],
             help=readme["tooltips"]["date_format"],
         )
-        if st.checkbox(
-            "Upload my own config file", False, help=readme["tooltips"]["custom_config_choice"]
-        ):
-            with st.sidebar.expander("Configuration", expanded=True):
-                display_config_download_links(
-                    config,
-                    "config.toml",
-                    "Template",
-                    instructions,
-                    "instructions.toml",
-                    "Instructions",
-                )
-                config_file = st.file_uploader(
-                    "Upload custom config", type="toml", help=readme["tooltips"]["custom_config"]
-                )
-                if config_file:
-                    config = load_custom_config(config_file)
-                else:
-                    st.stop()
+        
         if file:
             df = load_dataset(file, load_options)
         else:
