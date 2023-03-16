@@ -33,7 +33,7 @@ custom_config_choice = """
 * Uncheck to enter directly your specifications in the sidebar.
 """
 dataset_upload = """
-Your csv file should have at least a column with dates and a column with numeric values to forecast.
+File CSV minimal memiliki 1 kolom periode dan 1 kolom numerik untuk di prediksi.
 """
 toy_dataset = """
 Terdapat 5 sampel data, yaitu :
@@ -45,10 +45,10 @@ Terdapat 5 sampel data, yaitu :
 
 """
 date_format = """
-For example "%Y-%m-%d" or "%d/%m/%Y %H:%M:%S".
+Misal : "%d-%m-%Y" atau "%Y-%m-%d" atau "%d/%m/%Y %H:%M:%S"
 """
 separator = """
-Delimiter used in the csv file
+Separator adalah pemisah kolom di file CSV
 """
 date_column = """
 Column to be parsed as a date

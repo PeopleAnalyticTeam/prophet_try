@@ -32,9 +32,9 @@ dimensions = false # List of dimension columns, choose false to select it direct
 regressors = false # List of regressor columns, choose false to select it directly in the app.
 
 [dataprep] # Default dataprep parameters
-date_format = "%Y-%m-%d"
+date_format = "%d-%m-%Y"
 dimensions_agg = ["Mean", "Sum", "Min", "Max"] # List of possible target agg functions over dimensions. First is the default option.
-remove_days = [] # List of days of week to remove from dataset.
+remove_days     = [] # List of days of week to remove from dataset.
 # Select up to 6 elements among "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday".
 remove_zeros = true # Whether or not to remove rows where target is 0 (true or false).
 remove_negative = true # Whether or not to remove rows where target is <0 (true or false).
