@@ -45,16 +45,16 @@ Terdapat 5 sampel data, yaitu :
 
 """
 date_format = """
-Misal : "%d-%m-%Y" atau "%Y-%m-%d" atau "%d/%m/%Y %H:%M:%S"
+Misal : %d/%m/%Y atau "%d-%m-%Y" atau "%d/%m/%Y %H:%M:%S"
 """
 separator = """
 Separator adalah pemisah kolom di file CSV
 """
 date_column = """
-Column to be parsed as a date
+Kolom yang berisi keterangan waktu
 """
 target_column = """
-Quantity to be forecasted
+Kolom berisi data numerik yang akan di prediksi
 """
 dimensions = """
 Prophet can only forecast one series at a time.
