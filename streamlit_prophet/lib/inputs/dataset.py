@@ -45,7 +45,7 @@ def input_dataset(
         df = download_toy_dataset(config["datasets"][dataset_name]["url"])
         load_options["dataset"] = dataset_name
         load_options["date_format"] = config["dataprep"]["date_format"]
-        load_options["separator"] = ","
+        load_options["separator"] = ""
     else:
         file = st.file_uploader(
             "Pilih file yang akan di analisa dan prediksi", type="csv", help=readme["tooltips"]["dataset_upload"]
@@ -92,25 +92,25 @@ def input_columns(
     """
     if load_options["toy_dataset"]:
         date_col = st.selectbox(
-            "Date column",
+            "Pilih kolom yang berisi keterangan waktu",
             [config["datasets"][load_options["dataset"]]["date"]],
             help=readme["tooltips"]["date_column"],
         )
         target_col = st.selectbox(
-            "Target column",
+            "Pilih kolom berisi data numerik yang akan di prediksi",
             [config["datasets"][load_options["dataset"]]["target"]],
             help=readme["tooltips"]["target_column"],
         )
     else:
         date_col = st.selectbox(
-            "Date column",
+            "Pilih kolom yang berisi keterangan waktu",
             sorted(df.columns)
             if config["columns"]["date"] in ["false", False]
             else [config["columns"]["date"]],
             help=readme["tooltips"]["date_column"],
         )
         target_col = st.selectbox(
-            "Target column",
+            "Pilih kolom berisi data numerik yang akan di prediksi",
             sorted(set(df.columns) - {date_col})
             if config["columns"]["target"] in ["false", False]
             else [config["columns"]["target"]],
