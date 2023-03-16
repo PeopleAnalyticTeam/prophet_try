@@ -76,7 +76,7 @@ with st.sidebar.expander("Dataset", expanded=True):
     print_empty_cols(empty_cols)
 
 # Column names
-with st.sidebar.expander("Columns", expanded=True):
+with st.sidebar.expander("Kolom", expanded=True):
     date_col, target_col = input_columns(config, readme, df, load_options)
     df = format_date_and_target(df, date_col, target_col, config, load_options)
 
