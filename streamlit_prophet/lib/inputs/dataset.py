@@ -51,7 +51,7 @@ def input_dataset(
             "Pilih file yang akan di analisa dan prediksi", type="csv", help=readme["tooltips"]["dataset_upload"]
         )
         load_options["separator"] = st.selectbox(
-            "Tentukan separator File CSV", [",", ";", "|"], help=readme["tooltips"]["separator"]
+            "Tentukan separator File CSV", [";", "," ,"|"], help=readme["tooltips"]["separator"]
         )
         load_options["date_format"] = st.text_input(
             "Tentukan format kolom periode",
