@@ -44,6 +44,9 @@ from streamlit_prophet.lib.inputs.params import (
 from streamlit_prophet.lib.models.prophet import forecast_workflow
 from streamlit_prophet.lib.utils.load import load_config, load_image
 
+
+st.title('ANALISA PERCAKAKAPAN _:green[PNM CARE]_ MELALUI _PLATFORM WHATSAPP_')
+
 # Page config
 st.set_page_config(page_title="Prophet_Try") #, layout="wide")
 
