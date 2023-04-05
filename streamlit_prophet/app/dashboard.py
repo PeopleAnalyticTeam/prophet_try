@@ -49,7 +49,7 @@ from streamlit_prophet.lib.utils.load import load_config, load_image
 
 # Page config
 st.set_page_config(page_title="Prophet_Try") #, layout="wide")
-st.title(''ANALISA PERCAKAKAPAN _:green[PNM CARE]_ MELALUI _PLATFORM WHATSAPP_'')
+st.title('ANALISA PERCAKAKAPAN _:green[PNM CARE]_ MELALUI _PLATFORM WHATSAPP_')
 # Load config
 config, instructions, readme = load_config(
     "config_streamlit.toml", "config_instructions.toml", "config_readme.toml"
