@@ -61,7 +61,7 @@ report: List[Dict[str, Any]] = []
 
 # Info
 with st.expander(
-    "Informasi tentang Aplikasi", expanded=True #Streamlit app to build a time series forecasting model in a few clicks, expanded=False
+    "Informasi tentang Dashboard", expanded=True #Streamlit app to build a time series forecasting model in a few clicks, expanded=False
 ):
     st.write(readme["app"]["app_intro"])
     st.write("")
