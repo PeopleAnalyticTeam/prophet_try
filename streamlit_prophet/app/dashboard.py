@@ -45,11 +45,11 @@ from streamlit_prophet.lib.models.prophet import forecast_workflow
 from streamlit_prophet.lib.utils.load import load_config, load_image
 
 
-st.title('ANALISA PERCAKAKAPAN _:green[PNM CARE]_ MELALUI _PLATFORM WHATSAPP_')
+
 
 # Page config
 st.set_page_config(page_title="Prophet_Try") #, layout="wide")
-
+st.title('COBAAAA')
 # Load config
 config, instructions, readme = load_config(
     "config_streamlit.toml", "config_instructions.toml", "config_readme.toml"
@@ -61,7 +61,7 @@ report: List[Dict[str, Any]] = []
 
 # Info
 with st.expander(
-    "Informasi tentang Aplikasi", expanded=False #Streamlit app to build a time series forecasting model in a few clicks, expanded=False
+    "Informasi tentang Aplikasi", expanded=True #Streamlit app to build a time series forecasting model in a few clicks, expanded=False
 ):
     st.write(readme["app"]["app_intro"])
     st.write("")
