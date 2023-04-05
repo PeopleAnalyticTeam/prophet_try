@@ -1,6 +1,6 @@
 [app]
 app_intro = """
-Aplikasi Streamlit ini digunakan untuk menganalisa dan memprediksi data deret waktu dengan tahapan sebagai berikut :
+Dashboard ini digunakan untuk menganalisa dan memprediksi data deret waktu dengan tahapan sebagai berikut :
 * __Tahap persiapan data__
 * __Tahap pemilihan parameter yang mempengaruhi prediksi__
 * __Tahap pemilihan metode evaluasi untuk melihat akurasi model__
